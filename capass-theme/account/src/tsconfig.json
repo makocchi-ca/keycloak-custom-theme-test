@@ -12,8 +12,5 @@
     "strictNullChecks": true,
     "jsx": "react",
     "suppressImplicitAnyIndexErrors": true
-  },
-  "include": [
-    "./app/**/*.ts?"
-  ]
+  }
 }

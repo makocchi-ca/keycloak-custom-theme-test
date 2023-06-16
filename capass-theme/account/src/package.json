@@ -1,5 +1,5 @@
 {
-  "name": "keycloak-man",
+  "name": "capass-theme",
   "version": "1.0.0",
   "description": "Sample theme showing how to extend and modify the Account Console",
   "scripts": {
