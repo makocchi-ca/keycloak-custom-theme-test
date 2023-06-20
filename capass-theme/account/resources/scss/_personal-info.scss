@@ -1,0 +1,26 @@
+.personal-info {
+  &-form {
+    .pf-c-form {
+      &__group {
+        &-control {
+          max-width: unset;
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      .pf-c-form {
+        &__group {
+          width: 48%;
+  
+          &.pf-m-action {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

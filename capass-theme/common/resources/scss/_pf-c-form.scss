@@ -1,0 +1,35 @@
+.pf-c-form {
+  &-control {
+    --pf-c-form-control--BorderTopColor: var(--pf-global--BorderColor--100);
+    --pf-c-form-control--BorderRightColor: var(--pf-global--BorderColor--100);
+    --pf-c-form-control--BorderBottomColor: var(--pf-global--BorderColor--100);
+    --pf-c-form-control--BorderLeftColor: var(--pf-global--BorderColor--100);
+    --pf-c-form-control--BorderRadius: var(--pf-global--BorderRadius--sm);
+    --pf-c-form-control--inset--base: 0.75rem;
+    --pf-c-form-control--PaddingTop: calc(var(--pf-c-form-control--inset--base) - var(--pf-global--BorderWidth--sm));
+    --pf-c-form-control--PaddingBottom: calc(var(--pf-c-form-control--inset--base) - var(--pf-global--BorderWidth--sm));
+    --pf-c-form-control__select--PaddingLeft: calc(var(--pf-c-form-control--inset--base) - var(--pf-c-form-control--BorderWidth));
+
+    &:hover {
+      --pf-c-form-control--BorderTopColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      --pf-c-form-control--BorderRightColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      --pf-c-form-control--BorderBottomColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      --pf-c-form-control--BorderLeftColor: var(--pf-c-form-control--focus--BorderBottomColor);
+    }
+    &:focus {--pf-c-form-control--BorderTopColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      --pf-c-form-control--BorderRightColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      --pf-c-form-control--BorderBottomColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      --pf-c-form-control--BorderLeftColor: var(--pf-c-form-control--focus--BorderBottomColor);
+      padding-bottom: var(--pf-c-form-control--PaddingBottom);
+      border-width: var(--pf-c-form-control--focus--BorderBottomWidth);
+    }
+    &:focus-visible {
+      outline: 2px var(--pf-global--active-color--300);
+    }
+  }
+
+  &__label-text {
+    font-weight: var(--pf-global--FontWeight--normal);
+    color: var(--pf-global--Color--200);
+  }
+}

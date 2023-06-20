@@ -1,0 +1,65 @@
+:root {
+  --pf-global--palette--white: #fff;
+  --pf-global--BackgroundColor--100: #fff;
+  --pf-global--BackgroundColor--150: #FAFBFA;
+  --pf-global--BackgroundColor--200: #F2F4F2;
+  --pf-global--BackgroundColor--light-100: #fff;
+  --pf-global--BackgroundColor--light-200: #FAFBFA;
+  --pf-global--BackgroundColor--light-300: #F2F4F2;
+  --pf-global--BackgroundColor--light-transparent-100: rgba(250, 251, 250, 0.62);
+  --pf-global--BackgroundColor--light-transparent-200: rgba(250, 251, 250, 0.32);
+  --pf-global--BackgroundColor--dark-100: #1E281F;
+  --pf-global--BackgroundColor--dark-200: #3C443E;
+  --pf-global--BackgroundColor--dark-300: #2A2E2B;
+  --pf-global--BackgroundColor--dark-400: #555C56;
+  --pf-global--BackgroundColor--dark-transparent-100: rgba(3, 3, 3, 0.62);
+  --pf-global--BackgroundColor--dark-transparent-200: rgba(3, 3, 3, 0.32);
+  --pf-global--Color--100: #1E281F;
+  --pf-global--Color--200: #657167;
+  --pf-global--Color--300: #3C443E;
+  --pf-global--Color--400: #DCE0DD;
+  --pf-global--Color--light-100: #fff;
+  --pf-global--Color--light-200: #FAFBFA;
+  --pf-global--Color--light-300: #F2F4F2;
+  --pf-global--Color--dark-100: #1E281F;
+  --pf-global--Color--dark-200: #657167;
+  --pf-global--active-color--100: #2D8C3C;
+  --pf-global--active-color--200: #EAF3EB;
+  --pf-global--active-color--300: #82BE28;
+  --pf-global--active-color--400: #C0DF93;
+  --pf-global--disabled-color--100: #657167;
+  --pf-global--disabled-color--200: #FAFBFA;
+  --pf-global--disabled-color--300: #F2F4F2;
+  --pf-global--primary-color--100: #2D8C3C;
+  --pf-global--primary-color--200: #22692D;
+  --pf-global--primary-color--light-100: #2D8C3C;
+  --pf-global--primary-color--dark-100: #82BE28;
+  --pf-global--secondary-color--100: #657167;
+  --pf-global--default-color--100: #C0DF93;
+  --pf-global--default-color--200: #82BE28;
+  --pf-global--default-color--300: #2D8C3C;
+
+  --pf-global--link--Color: #2D8C3C;
+  --pf-global--link--Color--hover: #22692D;
+  --pf-global--link--Color--light: #2D8C3C;
+  --pf-global--link--Color--light--hover: #22692D;
+  --pf-global--link--Color--dark: #82BE28;
+  --pf-global--link--Color--dark--hover: #C0DF93;
+  --pf-global--link--Color--visited: #2D8C3C;
+
+  --pf-global--BorderColor--100: #E5E5E5;
+  --pf-global--BorderColor--200: #657167;
+  --pf-global--BorderColor--300: #f0f0f0;
+  --pf-global--BorderColor--dark-100: #E5E5E5;
+  --pf-global--BorderColor--light-100: #ACAFAC;
+
+  --pf-global--BorderRadius--sm: 4px;
+}
+
+body {
+  color: var(--pf-global--Color--300);
+}
+
+p {
+  color: var(--pf-global--Color--300);
+}
