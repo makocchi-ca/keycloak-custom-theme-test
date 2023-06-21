@@ -130,7 +130,7 @@ a#kc-current-locale-link::after {
   width: 100%;
 }
 .kc-logo-text {
-  background-image: url(../../../common/resources/img/logo.svg);
+  background-image: url(../img/logo.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
