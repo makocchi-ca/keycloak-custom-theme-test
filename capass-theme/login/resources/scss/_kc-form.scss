@@ -1,0 +1,65 @@
+#kc-webauthn-settings-form {
+  padding-top: 8px;
+}
+
+#kc-form {
+  @media (max-width: 767px) {
+    float: none;
+  }
+
+  &-webauthn {
+    .select-auth-box-parent {
+      pointer-events: none;
+    }
+  
+    .select-auth-box-desc {
+      color: var(--pf-global--palette--black-600);
+    }
+  
+    .select-auth-box-headline {
+      color: var(--pf-global--Color--300);
+    }
+  
+    .select-auth-box-icon {
+      flex: 0 0 3em;
+    }
+  
+    .select-auth-box-icon-properties {
+      margin-top: 10px;
+      font-size: 1.8em;
+  
+      &.unknown-transport-class {
+        margin-top: 3px;
+      }
+    }
+  
+    .pf-l-stack__item {
+      margin: -1px 0;
+    }
+  }
+  &-wrapper {
+    margin-top: 10px;
+  }
+  &-options {
+    span {
+      display: block;
+    }
+  
+    .checkbox {
+      margin-top: 0;
+      color: #72767b;
+    }
+  }
+  &-buttons {
+    margin-top: 20px;
+  }
+}
+
+#kc-form-login,
+#kc-register-form,
+#kc-update-profile-form,
+#kc-update-email-form {
+  div.form-group:last-of-type {
+    margin-bottom: 0px;
+  }
+}

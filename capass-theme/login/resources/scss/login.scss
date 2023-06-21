@@ -1,0 +1,29 @@
+@use "login-pf";
+@use "pf-c";
+@use "kc-page";
+@use "kc-locale";
+@use "kc-logo";
+@use "kc-header";
+@use "kc-container";
+@use "kc-content";
+@use "kc-username";
+@use "kc-form";
+@use "kc-info";
+@use "kc-tooltip";
+@use "kc-oauth";
+@use "kc-code";
+@use "kc-totp";
+@use "kc-social";
+
+
+p.instruction {
+  margin: 5px 0;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+#kc-back {
+  margin-top: 5px;
+}

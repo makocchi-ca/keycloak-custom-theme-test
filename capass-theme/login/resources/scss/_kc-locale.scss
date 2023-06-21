@@ -1,0 +1,40 @@
+#kc-locale {
+  ul {
+    background-color: var(--pf-global--BackgroundColor--100);
+    display: none;
+    top: 20px;
+    min-width: 100px;
+    padding: 0;
+  }
+  &-dropdown {
+    display: inline-block;
+  
+    &:hover ul {
+      display: block;
+    }
+  
+    a {
+      color: var(--pf-global--Color--200);
+      text-align: right;
+      font-size: var(--pf-global--FontSize--sm);
+    }
+  }
+  @media (min-width: 768px) {
+    position: relative;
+    text-align: right;
+    z-index: 9999;
+  }
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    z-index: 9999;
+  }
+}
+
+a#kc-current-locale-link::after {
+  content: "\2c5";
+  margin-left: var(--pf-global--spacer--xs);
+}

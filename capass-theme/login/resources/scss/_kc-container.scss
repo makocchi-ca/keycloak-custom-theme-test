@@ -1,0 +1,15 @@
+#kc-container {
+  &-wrapper {
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 100%;
+    }
+    @media (min-height: 646px) {
+      bottom: 12%;
+    }
+    @media (max-height: 645px) {
+      padding-top: 50px;
+      top: 20%;
+    }
+  }
+}

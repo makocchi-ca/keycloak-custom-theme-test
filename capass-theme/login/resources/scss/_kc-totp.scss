@@ -1,0 +1,32 @@
+/* TOTP */
+.subtitle {
+  text-align: right;
+  margin-top: 30px;
+  color: #909090;
+}
+
+.required {
+  color: var(--pf-global--danger-color--200);
+}
+
+#kc-totp {
+  &-settings {
+    margin: 0;
+    padding-left: 20px;
+  }
+  &-supported-apps {
+    margin-bottom: 10px;
+  }
+  &-secret {
+    &-qr-code {
+      max-width: 150px;
+      max-height: 150px;
+    }
+    &-key {
+      background-color: #fff;
+      color: #333333;
+      font-size: 16px;
+      padding: 10px 0;
+    }
+  }
+}

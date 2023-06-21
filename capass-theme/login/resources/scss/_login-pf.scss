@@ -1,0 +1,66 @@
+.login-pf {
+
+  body {
+    background-color: var(--pf-global--BackgroundColor--light-200);
+  }
+
+  .container {
+    padding-top: 40px;
+
+    @media (min-width: 768px) {
+      padding-right: 80px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  a:hover {
+    color: #0099d3;
+  }
+
+  &-page {
+
+    .login-pf {
+      &-brand {
+        margin-top: 20px;
+        max-width: 360px;
+        width: 40%;
+      }
+      &-signup {
+        font-size: 15px;
+        color: #72767b;
+      }
+    }
+  
+    &.login-pf-page-accounts {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .btn-primary {
+      margin-top: 0;
+    }
+  
+    .list-view-pf {
+      .list-group-item {
+        border-bottom: 1px solid #ededed;
+      }
+      &-description {
+        width: 100%;
+      }
+    }
+  
+    @media (max-width: 767px) {
+      .card-pf {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+        border-top: 0;
+        box-shadow: 0 0;
+      }
+    }
+  }
+}

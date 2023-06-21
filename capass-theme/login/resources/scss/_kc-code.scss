@@ -1,0 +1,53 @@
+/* Code */
+#kc-code {
+  textarea {
+    width: 100%;
+    height: 8em;
+  }
+}
+
+/* Recovery codes */
+.kc-recovery-codes {
+  &-warning {
+    margin-bottom: 32px;
+  
+    .pf-c-alert__description p {
+      font-size: 0.875rem;
+    }
+  }
+  &-list {
+    list-style: none;
+    columns: 2;
+    margin: 16px 0;
+    padding: 16px 16px 8px 16px;
+    border: 1px solid #d2d2d2;
+  
+    li {
+      margin-bottom: 8px;
+      font-size: 11px;
+  
+      span {
+        color: #6a6e73;
+        width: 16px;
+        text-align: right;
+        display: inline-block;
+        margin-right: 1px;
+      }
+    }
+  }
+  &-actions {
+    margin-bottom: 24px;
+  
+    button {
+      padding-left: 0;
+  
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+  &-confirmation {
+    align-items: baseline;
+    margin-bottom: 16px;
+  }
+}
