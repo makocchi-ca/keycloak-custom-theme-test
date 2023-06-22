@@ -61,6 +61,13 @@ p {
   color: var(--pf-global--Color--300);
 }
 
+.pf-c-button {
+  padding: var(--pf-c-button--PaddingTop) var(--pf-c-button--PaddingRight) var(--pf-c-button--PaddingBottom) var(--pf-c-button--PaddingLeft);
+  font-size: var(--pf-c-button--FontSize);
+  line-height: var(--pf-c-button--LineHeight);
+  border-radius: var(--pf-c-button--BorderRadius);
+}
+
 .pf-c-form-control {
   --pf-c-form-control--BorderTopColor: var(--pf-global--BorderColor--100);
   --pf-c-form-control--BorderRightColor: var(--pf-global--BorderColor--100);

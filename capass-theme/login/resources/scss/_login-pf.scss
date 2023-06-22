@@ -1,6 +1,7 @@
 .login-pf {
 
   body {
+    background-image: none;
     background-color: var(--pf-global--BackgroundColor--light-200);
   }
 
@@ -21,6 +22,7 @@
   }
 
   &-page {
+    padding: var(--pf-global--spacer--md);
 
     .login-pf {
       &-brand {
@@ -57,7 +59,6 @@
         max-width: none;
         margin-left: 0;
         margin-right: 0;
-        padding-top: 0;
         border-top: 0;
         box-shadow: 0 0;
       }
