@@ -2,7 +2,7 @@
   ul {
     background-color: var(--pf-global--BackgroundColor--100);
     display: none;
-    top: 20px;
+    top: var(--pf-global--spacer--lg);
     min-width: 100px;
     padding: 0;
   }
@@ -15,7 +15,6 @@
   
     a {
       color: var(--pf-global--Color--200);
-      text-align: right;
       font-size: var(--pf-global--FontSize--sm);
     }
   }
@@ -27,14 +26,21 @@
   @media (max-width: 767px) {
     position: absolute;
     width: 200px;
-    top: 20px;
-    right: 20px;
+    top: var(--pf-global--spacer--lg);
+    right: var(--pf-global--spacer--md);
     text-align: right;
     z-index: 9999;
   }
 }
 
 a#kc-current-locale-link::after {
-  content: "\2c5";
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
   margin-left: var(--pf-global--spacer--xs);
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23657167" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 10l5 5 5-5H7z"/></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

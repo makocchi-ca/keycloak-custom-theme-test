@@ -1,28 +1,23 @@
 #kc-header {
-  color: #ededed;
   overflow: visible;
   white-space: nowrap;
 
   @media (max-width: 767px) {
-    padding-left: 15px;
-    padding-right: 15px;
     float: none;
     text-align: left;
   }
 
   &-wrapper {
-    font-size: 29px;
+    font-size: var(--pf-global--FontSize--2xl);
     text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 1.2em;
-    padding: 62px 10px 20px;
+    padding-top: var(--pf-global--spacer--4xl);
     white-space: normal;
 
     @media (max-width: 767px) {
-      font-size: 16px;
+      font-size: var(--pf-global--FontSize--xl);
       font-weight: bold;
-      padding: 20px 60px 0 0;
-      color: #72767b;
+      padding-top: 0;
+      padding-right: var(--pf-global--spacer--4xl);
       letter-spacing: 0;
     }
   }

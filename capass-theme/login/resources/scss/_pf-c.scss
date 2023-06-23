@@ -8,20 +8,11 @@ textarea.pf-c-form-control {
 
 .pf-c-button.pf-m-control {
   border: solid var(--pf-global--BorderWidth--sm);
-  border-color: rgba(230, 230, 230, 0.5);
+  border-color: var(--pf-global--BorderColor--100);
 }
 
-.card-pf {
-  margin: 0 auto;
-  box-shadow: none;
-  padding: 0 20px;
-  max-width: 500px;
-  border: var(--pf-global--BorderWidth--sm) solid var(--pf-global--BorderColor--300);
-  border-top: var(--pf-global--BorderWidth--xl) solid var(--pf-global--primary-color--100);
-  border-radius: var(--pf-global--BorderRadius--sm);
-
-  form.form-actions .btn {
-    float: right;
-    margin-left: 10px;
+.pf-c-form__label {
+  &.pf-c-form__label-text{
+    padding-bottom: var(--pf-c-form__group-label--PaddingBottom);
   }
 }

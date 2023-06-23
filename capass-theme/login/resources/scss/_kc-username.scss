@@ -1,11 +1,11 @@
 #kc-attempted-username {
-  font-size: 20px;
+  font-size: var(--pf-global--FontSize--xl);
   font-family: inherit;
   font-weight: normal;
-  padding-right: 10px;
+  padding-right: var(--pf-global--spacer--sm);
+  margin-bottom: 0;
 }
 
 #kc-username {
   text-align: center;
-  margin-bottom: -10px;
 }

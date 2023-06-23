@@ -10,9 +10,9 @@
     margin: 0;
 
     li {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 12px;
-      padding: 10px 0;
+      border-top: var(--pf-global--BorderWidth--sm) solid var(--pf-global--BorderColor--300);
+      font-size: var(--pf-global--FontSize--sm);
+      padding: var(--pf-global--spacer--md) 0;
 
       &:first-of-type {
         border-top: 0;
@@ -23,52 +23,5 @@
   .kc-role {
     display: inline-block;
     width: 50%;
-  }
-}
-
-.select-auth {
-  &-container {
-    padding-bottom: 0px !important;
-  }
-  &-box {
-    &-arrow {
-      display: flex;
-      align-items: center;
-      margin-right: 2rem;
-    }
-    
-    &-icon {
-      display: flex;
-      flex: 0 0 2em;
-      justify-content: center;
-      margin-right: 1rem;
-      margin-left: 3rem;
-    }
-    
-    &-parent {
-      border-top: 1px solid var(--pf-global--palette--black-200);
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      cursor: pointer;
-    
-      &:hover {
-        background-color: #f7f8f8;
-      }
-    }
-    &-headline {
-      font-size: var(--pf-global--FontSize--md);
-      color: var(--pf-global--primary-color--100);
-      font-weight: bold;
-    }
-    
-    &-desc {
-      font-size: var(--pf-global--FontSize--sm);
-    }
-    
-    &-paragraph {
-      text-align: center;
-      font-size: var(--pf-global--FontSize--md);
-      margin-bottom: 5px;
-    }
   }
 }

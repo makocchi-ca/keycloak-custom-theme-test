@@ -1,20 +1,23 @@
 #kc-info {
-  margin: 20px -40px -30px;
+  margin: var(--pf-global--spacer--md) calc( var(--pf-global--spacer--2xl) * -1 ) calc( var(--pf-global--spacer--lg) * -1 );
 
+  @media (max-width: 767px) {
+    margin: var(--pf-global--spacer--md) calc( var(--pf-global--spacer--md) * -1 ) calc( var(--pf-global--spacer--md) * -1 );
+  }
+  
   &-wrapper {
-    font-size: 13px;
-    padding: 15px 35px;
-    background-color: #f0f0f0;
+    font-size: var(--pf-global--FontSize--sm);
+    padding: var(--pf-global--spacer--md) var(--pf-global--spacer--xl);
+    background-color: var(--pf-global--BackgroundColor--200);
 
     @media (max-width: 767px) {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      background-color: transparent;
+      border-top: var(--pf-global--BorderWidth--sm) solid var(--pf-global--BorderColor--300);
     }
   }
 }
 
 #kc-terms-text {
-  margin-bottom: 20px;
+  margin-bottom: var(--pf-global--spacer--md);
 }
 
 #kc-registration {

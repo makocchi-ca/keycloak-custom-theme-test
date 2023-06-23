@@ -11,10 +11,10 @@
     margin: 0 auto;
 
     @media (max-width: 767px) {
-      margin: 0;
-      width: 150px;
+      background-position: left;
       height: 32px;
-      background-size: 100%;
+      width: 150px;
+      margin: 0;
     }
   
     span {

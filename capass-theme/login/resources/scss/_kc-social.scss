@@ -1,14 +1,14 @@
 /* Social */
 .kc-social {
   &-links {
-    margin-top: 20px;
+    margin-top: var(--pf-global--spacer--lg);
   
     li {
       width: 100%;
     }
   }
   &-provider-logo {
-    font-size: 23px;
+    font-size: var(--pf-global--FontSize--lg);
     width: 30px;
     height: 25px;
     float: left;
@@ -18,19 +18,19 @@
   }
   &-item {
     margin-bottom: var(--pf-global--spacer--sm);
-    font-size: 15px;
+    font-size: var(--pf-global--FontSize--md);
     text-align: center;
   }
   &-provider-name {
     position: relative;
   }
   &-icon-text {
-    left: -15px;
+    left: calc( var(--pf-global--spacer--md) * -1);
   }
   &-grid {
     display: grid;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
+    grid-column-gap: var(--pf-global--spacer--md);
+    grid-row-gap: var(--pf-global--spacer--sm);
     grid-column-end: span 6;
     --pf-l-grid__item--GridColumnEnd: span 6;
 
@@ -40,18 +40,14 @@
     }
   
     .kc-social-icon-text {
-      left: -10px;
-
-      @media (max-width: 767px) {
-        left: -15px;
-      }
+      left: calc( var(--pf-global--spacer--md) * -1);
     }
   }
   &-section {
     text-align: center;
   
     hr {
-      margin-bottom: 10px;
+      margin-bottom: var(--pf-global--spacer--sm);
     }
   }
 }

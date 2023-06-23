@@ -1,8 +1,109 @@
+form {
+  --pf-c-form--GridGap: var(--pf-global--gutter--md);
+  --pf-c-form__group--m-action--MarginTop: var(--pf-global--spacer--xl);
+  --pf-c-form--m-horizontal__group-label--md--GridColumnWidth: 9.375rem;
+  --pf-c-form--m-horizontal__group-label--md--GridColumnGap: var(--pf-global--spacer--md);
+  --pf-c-form--m-horizontal__group-control--md--GridColumnWidth: 1fr;
+  --pf-c-form--m-limit-width--MaxWidth: 55rem;
+  --pf-c-form--m-horizontal__group-label--md--PaddingTop: calc((((((var(--pf-global--FontSize--md) * var(--pf-global--LineHeight--md)) + (2 * var(--pf-global--BorderWidth--sm))) - var(--pf-global--FontSize--md)) / 2) + var(--pf-global--FontSize--md)) - ((((var(--pf-global--FontSize--sm) * var(--pf-global--LineHeight--sm)) - var(--pf-global--FontSize--sm)) / 2) + var(--pf-global--FontSize--sm)) + var(--pf-global--BorderWidth--sm));
+  --pf-c-form__group-label--PaddingBottom: var(--pf-global--spacer--sm);
+  --pf-c-form--m-horizontal__group-label--m-no-padding--md--PaddingTop: 0;
+  --pf-c-form--m-horizontal__group-label--m-no-padding--md--TranslateY: calc(((((var(--pf-global--FontSize--sm) * var(--pf-global--LineHeight--sm)) - var(--pf-global--FontSize--sm)) / 2) + var(--pf-global--FontSize--sm)) - ((((var(--pf-global--FontSize--md) * var(--pf-global--LineHeight--sm)) - var(--pf-global--FontSize--md)) / 2) + var(--pf-global--FontSize--md)));
+  --pf-c-form__label--FontSize: var(--pf-global--FontSize--sm);
+  --pf-c-form__label--LineHeight: var(--pf-global--LineHeight--sm);
+  --pf-c-form__label--m-disabled--Color: var(--pf-global--disabled-color--100);
+  --pf-c-form__label--hover--Cursor: pointer;
+  --pf-c-form__label--m-disabled--hover--Cursor: not-allowed;
+  --pf-c-form__label-text--FontWeight: var(--pf-global--FontWeight--bold);
+  --pf-c-form__label-required--MarginLeft: var(--pf-global--spacer--xs);
+  --pf-c-form__label-required--FontSize: var(--pf-global--FontSize--sm);
+  --pf-c-form__label-required--Color: var(--pf-global--danger-color--100);
+  --pf-c-form__group-label-help--PaddingTop: var(--pf-global--spacer--xs);
+  --pf-c-form__group-label-help--PaddingRight: var(--pf-global--spacer--xs);
+  --pf-c-form__group-label-help--PaddingBottom: var(--pf-global--spacer--xs);
+  --pf-c-form__group-label-help--PaddingLeft: var(--pf-global--spacer--xs);
+  --pf-c-form__group-label-help--MarginTop: calc(var(--pf-c-form__group-label-help--PaddingTop) * -1);
+  --pf-c-form__group-label-help--MarginRight: calc(var(--pf-c-form__group-label-help--PaddingRight) * -1);
+  --pf-c-form__group-label-help--MarginBottom: calc(var(--pf-c-form__group-label-help--PaddingBottom) * -1);
+  --pf-c-form__group-label-help--MarginLeft: calc(var(--pf-c-form__group-label-help--PaddingLeft) * -1 + var(--pf-global--spacer--xs));
+  --pf-c-form__group-label-help--FontSize: var(--pf-global--FontSize--sm);
+  --pf-c-form__group-label-help--TranslateY: 0.125rem;
+  --pf-c-form__group-label-help--Color: var(--pf-global--Color--200);
+  --pf-c-form__group-label-help--hover--Color: var(--pf-global--Color--100);
+  --pf-c-form__group-label-help--focus--Color: var(--pf-global--Color--100);
+  --pf-c-form__group-label-info--MarginLeft: var(--pf-global--spacer--sm);
+  --pf-c-form__group-label-info--FontSize: var(--pf-global--FontSize--sm);
+  --pf-c-form__group-control--m-inline--child--MarginRight: var(--pf-global--spacer--lg);
+  --pf-c-form__group-control__helper-text--MarginBottom: var(--pf-global--spacer--xs);
+  --pf-c-grid__group-control--m-stack--Gap: var(--pf-global--spacer--sm);
+  --pf-c-grid__group-control--m-stack__helper-text--MarginTop: calc(var(--pf-c-grid__group-control--m-stack--Gap) * -1 + var(--pf-c-form__helper-text--MarginTop--base));
+  --pf-c-form__actions--child--MarginTop: var(--pf-global--spacer--sm);
+  --pf-c-form__actions--child--MarginRight: var(--pf-global--spacer--sm);
+  --pf-c-form__actions--child--MarginBottom: var(--pf-global--spacer--sm);
+  --pf-c-form__actions--child--MarginLeft: var(--pf-global--spacer--sm);
+  --pf-c-form__actions--MarginTop: calc(var(--pf-c-form__actions--child--MarginTop) * -1);
+  --pf-c-form__actions--MarginRight: calc(var(--pf-c-form__actions--child--MarginRight) * -1);
+  --pf-c-form__actions--MarginBottom: calc(var(--pf-c-form__actions--child--MarginBottom) * -1);
+  --pf-c-form__actions--MarginLeft: calc(var(--pf-c-form__actions--child--MarginLeft) * -1);
+  --pf-c-form__helper-text--MarginTop--base: var(--pf-global--spacer--xs);
+  --pf-c-form__helper-text--MarginTop: var(--pf-c-form__helper-text--MarginTop--base);
+  --pf-c-form__helper-text--FontSize: var(--pf-global--FontSize--sm);
+  --pf-c-form__helper-text--Color: var(--pf-global--Color--100);
+  --pf-c-form__helper-text-icon--FontSize: var(--pf-global--FontSize--md);
+  --pf-c-form__helper-text-icon--MarginRight: var(--pf-global--spacer--xs);
+  --pf-c-form__helper-text--m-success--Color: var(--pf-global--success-color--200);
+  --pf-c-form__helper-text--m-warning--Color: var(--pf-global--warning-color--200);
+  --pf-c-form__helper-text--m-error--Color: var(--pf-global--danger-color--100);
+  --pf-c-form__section--MarginTop: var(--pf-global--spacer--xl);
+  --pf-c-form__section--Gap: var(--pf-global--gutter--md);
+  --pf-c-form__section-title--FontSize: var(--pf-global--FontSize--lg);
+  --pf-c-form__section-title--FontWeight: var(--pf-global--FontWeight--bold);
+  --pf-c-form__section-title--MarginBottom: calc(var(--pf-global--spacer--sm) * -1);
+  --pf-c-form__field-group--border-width-base: var(--pf-global--BorderWidth--sm);
+  --pf-c-form__field-group--BorderTopWidth: var(--pf-c-form__field-group--border-width-base);
+  --pf-c-form__field-group--BorderTopColor: var(--pf-global--BorderColor--100);
+  --pf-c-form__field-group--BorderBottomWidth: var(--pf-c-form__field-group--border-width-base);
+  --pf-c-form__field-group--BorderBottomColor: var(--pf-global--BorderColor--100);
+  --pf-c-form__field-group--field-group--MarginTop: calc(var(--pf-c-form--GridGap) * -1);
+  --pf-c-form__field-group--GridTemplateColumns--toggle: calc(var(--pf-global--spacer--md) * 2 + var(--pf-c-form__field-group-toggle-icon--MinWidth) + var(--pf-global--spacer--xs));
+  --pf-c-form__field-group-toggle--PaddingTop: var(--pf-global--spacer--md);
+  --pf-c-form__field-group-toggle--PaddingRight: var(--pf-global--spacer--xs);
+  --pf-c-form__field-group__field-group__field-group-toggle--PaddingTop: var(--pf-global--spacer--lg);
+  --pf-c-form__field-group-header-toggle--BorderWidth--base: var(--pf-global--BorderWidth--sm);
+  --pf-c-form__field-group__field-group--field-group__field-group-toggle--after--BorderTopWidth: var(--pf-c-form__field-group-header-toggle--BorderWidth--base);
+  --pf-c-form__field-group-toggle-button--MarginTop: calc(var(--pf-global--spacer--form-element) * -1);
+  --pf-c-form__field-group-toggle-button--MarginBottom: calc(var(--pf-global--spacer--form-element) * -1);
+  --pf-c-form__field-group-toggle-icon--Transition: var(--pf-global--Transition);
+  --pf-c-form__field-group-toggle-icon--MinWidth: var(--pf-global--FontSize--md);
+  --pf-c-form__field-group-toggle-icon--Rotate: 0;
+  --pf-c-form__field-group--m-expanded__toggle-icon--Rotate: 90deg;
+  --pf-c-form__field-group-header--PaddingTop: var(--pf-global--spacer--md);
+  --pf-c-form__field-group-header--PaddingBottom: var(--pf-global--spacer--md);
+  --pf-c-form__field-group-header--GridColumn: 1 / 3;
+  --pf-c-form__field-group__field-group__field-group-header--PaddingTop: var(--pf-global--spacer--lg);
+  --pf-c-form__field-group__field-group__field-group-header--PaddingBottom: var(--pf-global--spacer--lg);
+  --pf-c-form__field-group-toggle--field-group-header--GridColumn: 2 / 3;
+  --pf-c-form__field-group__field-group--field-group__field-group-header--after--BorderTopWidth: var(--pf-c-form__field-group-header-toggle--BorderWidth--base);
+  --pf-c-form__field-group-header-description--MarginTop: var(--pf-global--spacer--xs);
+  --pf-c-form__field-group-header-description--Color: var(--pf-global--Color--200);
+  --pf-c-form__field-group-header-actions--MarginTop: calc(var(--pf-global--spacer--form-element) * -1);
+  --pf-c-form__field-group-header-actions--MarginBottom: calc(var(--pf-global--spacer--form-element) * -1);
+  --pf-c-form__field-group-header-actions--MarginLeft: var(--pf-global--spacer--sm);
+  --pf-c-form__field-group-body--PaddingTop: var(--pf-global--spacer--lg);
+  --pf-c-form__field-group-body--PaddingBottom: var(--pf-global--spacer--lg);
+  --pf-c-form__field-group-body--Gap: var(--pf-c-form--GridGap);
+  --pf-c-form__field-group-body--GridColumn: 2 / 3;
+  --pf-c-form__field-group__field-group__field-group-body--GridColumn: 1 / 3;
+  --pf-c-form__field-group__field-group__field-group-toggle--field-group-body--GridColumn: 2 / 3;
+  --pf-c-form__field-group-body__field-group--last-child--MarginBottom: calc(var(--pf-c-form__field-group-body--PaddingBottom) * -1);
+}
+
 #kc-webauthn-settings-form {
-  padding-top: 8px;
+  padding-top: var(--pf-global--spacer--sm);
 }
 
 #kc-form {
+
   @media (max-width: 767px) {
     float: none;
   }
@@ -25,8 +126,8 @@
     }
   
     .select-auth-box-icon-properties {
-      margin-top: 10px;
-      font-size: 1.8em;
+      margin-top: var(--pf-global--spacer--sm);
+      font-size: var(--pf-global--FontSize--3xl);
   
       &.unknown-transport-class {
         margin-top: 3px;
@@ -34,32 +135,45 @@
     }
   
     .pf-l-stack__item {
-      margin: -1px 0;
+      margin-top: -1px;
     }
   }
-  &-wrapper {
-    margin-top: 10px;
-  }
+
   &-options {
     span {
       display: block;
     }
+
+    label {
+      font-size: var(--pf-c-form__label--FontSize);
+      font-weight: var(--pf-global--FontWeight--normal);
+      color: var(--pf-global--Color--200);
+    }
   
     .checkbox {
-      margin-top: 0;
-      color: #72767b;
+      margin: 0;
     }
-  }
-  &-buttons {
-    margin-top: 20px;
+
+    + #kc-form-buttons {
+      margin-top: var(--pf-c-form--GridGap);
+    }
   }
 }
 
 #kc-form-login,
 #kc-register-form,
 #kc-update-profile-form,
-#kc-update-email-form {
-  div.form-group:last-of-type {
-    margin-bottom: 0px;
+#kc-update-email-form,
+.form-horizontal {
+  display: grid;
+  gap: var(--pf-c-form--GridGap);
+}
+
+.form-group {
+  margin: 0;
+
+  .form-horizontal & {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

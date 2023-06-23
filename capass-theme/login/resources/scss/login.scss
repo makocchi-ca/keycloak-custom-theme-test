@@ -1,6 +1,5 @@
 @use "login-pf";
 @use "pf-c";
-@use "kc-page";
 @use "kc-locale";
 @use "kc-logo";
 @use "kc-header";
@@ -11,13 +10,15 @@
 @use "kc-info";
 @use "kc-tooltip";
 @use "kc-oauth";
+@use "select-auth";
 @use "kc-code";
 @use "kc-totp";
+@use "kc-select";
 @use "kc-social";
 
-
 p.instruction {
-  margin: 5px 0;
+  margin: 0 0 var(--pf-global--spacer--md);
+  word-wrap: break-word;
 }
 
 .no-bottom-margin {
@@ -25,5 +26,5 @@ p.instruction {
 }
 
 #kc-back {
-  margin-top: 5px;
+  margin-top: var(--pf-global--spacer--sm);
 }

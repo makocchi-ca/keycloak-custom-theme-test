@@ -1,0 +1,17 @@
+.pf-c-alert {
+  --pf-c-alert--BorderTopWidth: var(--pf-global--BorderWidth--sm);
+  --pf-c-alert__title--FontWeight: var(--pf-global--FontWeight--normal);
+
+  --pf-c-alert--m-inline--BackgroundColor: var(--pf-global--default-color--100);
+  --pf-c-alert--m-inline--m-success--BackgroundColor: #f4fbef;
+  --pf-c-alert--m-inline--m-danger--BackgroundColor: #fff5f5;
+  --pf-c-alert--m-inline--m-warning--BackgroundColor: #fffaef;
+  --pf-c-alert--m-inline--m-info--BackgroundColor: #eefbfa;
+
+  border: var(--pf-c-alert--BorderTopWidth) solid var(--pf-c-alert--BorderTopColor);
+  border-radius: var(--pf-global--BorderRadius--sm);
+
+  &.pf-m-inline {
+    --pf-c-alert--BorderTopWidth: 0;
+  }
+}

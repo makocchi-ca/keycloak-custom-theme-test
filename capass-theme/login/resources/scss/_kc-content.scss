@@ -2,11 +2,23 @@
   width: 100%;
 
   &-wrapper {
-    margin-top: 20px;
 
     .row {
       margin-left: 0;
       margin-right: 0;
+    }
+
+    *[class^="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .pf-c-button {
+      margin-bottom: var(--pf-global--spacer--md);
+    }
+
+    .pf-c-alert {
+      margin-bottom: var(--pf-global--spacer--lg);
     }
   }
 

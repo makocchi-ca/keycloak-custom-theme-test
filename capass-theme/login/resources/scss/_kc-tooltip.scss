@@ -5,14 +5,14 @@
   .kc-tooltip-text {
     top: -3px;
     left: 160%;
-    background-color: black;
+    background-color: var(--pf-global--BackgroundColor--dark-100);
     visibility: hidden;
-    color: #fff;
+    color: var(--pf-global--Color--light-300);
     min-width: 130px;
     text-align: center;
-    border-radius: 2px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    border-radius: var(--pf-global--BorderRadius--sm);
+    box-shadow: var(--pf-global--BoxShadow--md);
+    padding: var(--pf-global--spacer--sm);
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
@@ -25,7 +25,7 @@
       margin-top: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: transparent black transparent transparent;
+      border-color: transparent var(--pf-global--Color--200) transparent transparent;
     }
   }
 
