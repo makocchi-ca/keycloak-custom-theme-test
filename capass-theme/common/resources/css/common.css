@@ -37,16 +37,16 @@
   --pf-global--secondary-color--100: #657167;
   --pf-global--default-color--100: #EAF3EB;
   --pf-global--default-color--200: #2D8C3C;
-  --pf-global--default-color--300: #262626;
+  --pf-global--default-color--300: #22692D;
   --pf-global--success-color--100: #52c41a;
-  --pf-global--success-color--200: #262626;
+  --pf-global--success-color--200: #237804;
   --pf-global--info-color--100: #13c2c2;
-  --pf-global--info-color--200: #262626;
+  --pf-global--info-color--200: #006d75;
   --pf-global--warning-color--100: #faad14;
-  --pf-global--warning-color--200: #262626;
+  --pf-global--warning-color--200: #ad6800;
   --pf-global--danger-color--100: #ff4d4f;
-  --pf-global--danger-color--200: #262626;
-  --pf-global--danger-color--300: #262626;
+  --pf-global--danger-color--200: #a8071a;
+  --pf-global--danger-color--300: #610813;
   --pf-global--link--Color: #2D8C3C;
   --pf-global--link--Color--hover: #22692D;
   --pf-global--link--Color--light: #2D8C3C;
@@ -137,6 +137,10 @@ a :hover {
 .pf-c-alert {
   --pf-c-alert--BorderTopWidth: var(--pf-global--BorderWidth--sm);
   --pf-c-alert__title--FontWeight: var(--pf-global--FontWeight--normal);
+  --pf-c-alert--m-success__title--Color: #262626;
+  --pf-c-alert--m-danger__title--Color: #262626;
+  --pf-c-alert--m-warning__title--Color: #262626;
+  --pf-c-alert--m-info__title--Color: #262626;
   --pf-c-alert--m-inline--BackgroundColor: var(--pf-global--default-color--100);
   --pf-c-alert--m-inline--m-success--BackgroundColor: #f4fbef;
   --pf-c-alert--m-inline--m-danger--BackgroundColor: #fff5f5;

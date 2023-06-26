@@ -2,6 +2,11 @@
   --pf-c-alert--BorderTopWidth: var(--pf-global--BorderWidth--sm);
   --pf-c-alert__title--FontWeight: var(--pf-global--FontWeight--normal);
 
+  --pf-c-alert--m-success__title--Color: #262626;
+  --pf-c-alert--m-danger__title--Color: #262626;;
+  --pf-c-alert--m-warning__title--Color: #262626;;
+  --pf-c-alert--m-info__title--Color: #262626;;
+
   --pf-c-alert--m-inline--BackgroundColor: var(--pf-global--default-color--100);
   --pf-c-alert--m-inline--m-success--BackgroundColor: #f4fbef;
   --pf-c-alert--m-inline--m-danger--BackgroundColor: #fff5f5;
