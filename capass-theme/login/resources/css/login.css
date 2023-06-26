@@ -164,7 +164,7 @@ a#kc-current-locale-link::after {
   width: 1em;
   height: 1em;
   margin-left: var(--pf-global--spacer--xs);
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23657167" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 10l5 5 5-5H7z"/></svg>');
+  background-image: var(--pf-global--Icon--Bg--drop_down);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -387,9 +387,10 @@ form {
   color: var(--pf-global--Color--300);
 }
 #kc-form-webauthn .select-auth-box-icon {
+  color: var(--pf-global--Color--200);
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 3em;
-          flex: 0 0 3em;
+      -ms-flex: 0 0 2em;
+          flex: 0 0 2em;
 }
 #kc-form-webauthn .select-auth-box-icon-properties {
   margin-top: var(--pf-global--spacer--sm);
@@ -522,6 +523,7 @@ form {
   padding-bottom: 0px !important;
 }
 .select-auth-box-arrow {
+  color: var(--pf-global--Color--200);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,8 +531,10 @@ form {
       -ms-flex-align: center;
           align-items: center;
   margin-right: var(--pf-global--spacer--md);
+  margin-left: var(--pf-global--spacer--md);
 }
 .select-auth-box-icon {
+  color: var(--pf-global--Color--200);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +544,7 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: var(--pf-global--spacer--md);
+  margin-right: var(--pf-global--spacer--lg);
   margin-left: var(--pf-global--spacer--md);
 }
 .select-auth-box-parent {
@@ -629,7 +633,7 @@ form {
 }
 
 .required {
-  color: var(--pf-global--danger-color--200);
+  color: var(--pf-global--danger-color--100);
 }
 
 #kc-totp-settings {

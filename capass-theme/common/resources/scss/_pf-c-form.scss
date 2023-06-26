@@ -9,6 +9,16 @@
     --pf-c-form-control--PaddingTop: calc(var(--pf-c-form-control--inset--base) - var(--pf-global--BorderWidth--sm));
     --pf-c-form-control--PaddingBottom: calc(var(--pf-c-form-control--inset--base) - var(--pf-global--BorderWidth--sm));
     --pf-c-form-control__select--PaddingLeft: calc(var(--pf-c-form-control--inset--base) - var(--pf-c-form-control--BorderWidth));
+    --pf-c-form-control--success--BackgroundUrl: var(--pf-global--Icon--Bg--check);
+    --pf-c-form-control--m-warning--BackgroundUrl: var(--pf-global--Icon--Bg--warning);
+    --pf-c-form-control--invalid--BackgroundUrl: var(--pf-global--Icon--Bg--error);
+    --pf-c-form-control--m-search--BackgroundUrl: var(--pf-global--Icon--Bg--search);
+    --pf-c-form-control--m-calendar--BackgroundUrl: var(--pf-global--Icon--Bg--calendar);
+    --pf-c-form-control--m-clock--BackgroundUrl: var(--pf-global--Icon--Bg--clock);
+    --pf-c-form-control__select--BackgroundUrl: var(--pf-global--Icon--Bg--drop_down);
+  
+    border-color: var(--pf-c-form-control--BorderBottomColor);
+
 
     &:hover {
       --pf-c-form-control--BorderTopColor: var(--pf-c-form-control--focus--BorderBottomColor);

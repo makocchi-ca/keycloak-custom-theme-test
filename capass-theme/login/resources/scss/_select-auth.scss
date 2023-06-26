@@ -4,16 +4,19 @@
   }
   &-box {
     &-arrow {
+      color: var(--pf-global--Color--200);
       display: flex;
       align-items: center;
       margin-right: var(--pf-global--spacer--md);
+      margin-left: var(--pf-global--spacer--md);
     }
     
     &-icon {
+      color: var(--pf-global--Color--200);
       display: flex;
       flex: 0 0 2em;
       justify-content: center;
-      margin-right: var(--pf-global--spacer--md);
+      margin-right: var(--pf-global--spacer--lg);
       margin-left: var(--pf-global--spacer--md);
     }
     

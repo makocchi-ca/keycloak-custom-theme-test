@@ -3,6 +3,7 @@
 
   --pf-c-page__header--BackgroundColor: var(--pf-global--BackgroundColor--light-100);
   --pf-c-page__header-sidebar-toggle__c-button--MarginRight: var(--pf-global--spacer--sm);
+  --pf-c-page__header-tools-group--MarginLeft: 0;
 
   --pf-c-page__sidebar--BackgroundColor: var(--pf-global--BackgroundColor--light-100);
   --pf-c-page__sidebar--BoxShadow: 0;
@@ -27,10 +28,6 @@
     &-brand {
       width: max-content;
       margin-right: var(--pf-global--spacer--md);
-    }
-
-    &-tools-group {
-      margin-right: var(--pf-global--spacer--md) !important;
     }
 
     .pf-c-button {
@@ -143,26 +140,6 @@
 .pf-c-brand {
   height: auto;
   display: block;
-}
-#landingSignOutButton,
-#signOutButton {
-  font-size: 0;
-  width: 2.25rem;
-  height: 2.25rem;
-  
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23657167" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,8l-1.41,1.41L17.17,11H9v2h8.17l-1.58,1.58L17,16l4-4L17,8z M5,5h7V3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h7v-2H5V5z"/></svg>');
-    background-size: 16px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 #loggedInUser {

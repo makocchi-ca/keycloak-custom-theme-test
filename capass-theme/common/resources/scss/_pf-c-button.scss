@@ -3,4 +3,20 @@
   font-size: var(--pf-c-button--FontSize);
   line-height: var(--pf-c-button--LineHeight);
   border-radius: var(--pf-c-button--BorderRadius);
+
+  &__icon {
+    vertical-align: -0.125em;
+    margin-right: var(--pf-c-button__icon--m-start--MarginRight);
+    margin-left: var(--pf-c-button__icon--m-end--MarginLeft);
+
+    &.pf-m-start {
+      margin-right: var(--pf-c-button__icon--m-start--MarginRight);
+      margin-left: 0;
+    }
+    &.pf-m-end {
+      margin-right: 0;
+      margin-left: var(--pf-c-button__icon--m-end--MarginLeft);
+    }
+  }
+  
 }
