@@ -114,13 +114,16 @@
   display: block;
 }
 
+#landingReferrerLink,
 #referrerLink {
   position: relative;
   padding: var(--pf-global--spacer--form-element) var(--pf-global--spacer--md);
 }
+#landingReferrerLink svg,
 #referrerLink svg {
   display: none;
 }
+#landingReferrerLink::before,
 #referrerLink::before {
   content: "";
   display: inline-block;
@@ -136,6 +139,7 @@
           mask-size: contain;
 }
 @media (max-width: 767px) {
+  #landingReferrerLink,
   #referrerLink {
     font-size: 0;
     width: 2.25rem;
@@ -143,6 +147,7 @@
     border-radius: var(--pf-global--BorderRadius--sm);
     border: var(--pf-global--BorderWidth--sm) solid var(--pf-global--primary-color--100);
   }
+  #landingReferrerLink::before,
   #referrerLink::before {
     content: "";
     position: absolute;
