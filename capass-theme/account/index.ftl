@@ -185,42 +185,16 @@
         </div>
         <div class="pf-c-page__header-tools">
             <#if referrer?has_content && referrer_uri?has_content>
-            <div class="pf-c-page__header-tools-group pf-m-icons pf-u-display-none pf-u-display-flex-on-md">
-              <a id="landingReferrerLink" href="${referrer_uri}" class="pf-c-button pf-m-link" tabindex="0">
-                  <span class="pf-c-button__icon pf-m-start">
-                      <i class="pf-icon pf-icon-arrow" aria-hidden="true"></i>
-                  </span>
+            <div class="pf-c-page__header-tools-group">
+              <a id="landingReferrerLink" href="${referrer_uri}"tabindex="0">
                   ${msg("backTo",referrerName)}
               </a>
             </div>
             </#if>
 
-            <div class="pf-c-page__header-tools-group pf-m-icons pf-u-display-none pf-u-display-flex-on-md pf-u-mr-md">
+            <div class="pf-c-page__header-tools-group">
               <button id="landingSignInButton" tabindex="0" style="display:none" onclick="keycloak.login();" class="pf-c-button pf-m-primary" type="button">${msg("doSignIn")}</button>
               <button id="landingSignOutButton" tabindex="0" style="display:none" onclick="keycloak.logout();" class="pf-c-button pf-m-primary" type="button">${msg("doSignOut")}</button>
-            </div>
-
-            <!-- Kebab for mobile -->
-            <div class="pf-c-page__header-tools-group pf-u-display-none-on-md">
-                <div id="landingMobileKebab" class="pf-c-dropdown pf-m-mobile" onclick="toggleMobileDropdown();"> <!-- pf-m-expanded -->
-                    <button aria-label="Actions" tabindex="0" id="landingMobileKebabButton" class="pf-c-dropdown__toggle pf-m-plain" type="button" aria-expanded="true" aria-haspopup="true">
-                        <svg fill="currentColor" height="1em" width="1em" viewBox="0 0 192 512" aria-hidden="true" role="img" style="vertical-align: -0.125em;"><path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" transform=""></path></svg>
-                    </button>
-                    <ul id="landingMobileDropdown" aria-labelledby="landingMobileKebabButton" class="pf-c-dropdown__menu pf-m-align-right" role="menu" style="display:none">
-                        <#if referrer?has_content && referrer_uri?has_content>
-                        <li role="none">
-                            <a id="landingMobileReferrerLink" href="${referrer_uri}" role="menuitem" tabindex="0" aria-disabled="false" class="pf-c-dropdown__menu-item">${msg("backTo",referrerName)}</a>
-                        </li>
-                        </#if>
-
-                        <li id="landingSignInLink" role="none" style="display:none">
-                            <a onclick="keycloak.login();" role="menuitem" tabindex="0" aria-disabled="false" class="pf-c-dropdown__menu-item">${msg("doLogIn")}</a>
-                        </li>
-                        <li id="landingSignOutLink" role="none" style="display:none">
-                            <a onclick="keycloak.logout();" role="menuitem" tabindex="0" aria-disabled="false" class="pf-c-dropdown__menu-item">${msg("doSignOut")}</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
 
             <span id="landingLoggedInUser"></span>

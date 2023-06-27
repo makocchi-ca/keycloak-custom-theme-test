@@ -2,7 +2,7 @@
   --pf-c-page--BackgroundColor: var(--pf-global--BackgroundColor--light-200);
   --pf-c-page__header--BackgroundColor: var(--pf-global--BackgroundColor--light-100);
   --pf-c-page__header-sidebar-toggle__c-button--MarginRight: var(--pf-global--spacer--sm);
-  --pf-c-page__header-tools-group--MarginLeft: 0;
+  --pf-c-page__header-tools-group--MarginLeft: var(--pf-global--spacer--sm);
   --pf-c-page__sidebar--BackgroundColor: var(--pf-global--BackgroundColor--light-100);
   --pf-c-page__sidebar--BoxShadow: 0;
   --pf-c-page__sidebar-body--PaddingTop: var(--pf-global--spacer--lg);
@@ -114,12 +114,83 @@
   display: block;
 }
 
+#referrerLink {
+  position: relative;
+  padding: var(--pf-global--spacer--form-element) var(--pf-global--spacer--md);
+}
+#referrerLink svg {
+  display: none;
+}
+#referrerLink::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--pf-global--Icon--Mask--arrow_back);
+          mask-image: var(--pf-global--Icon--Mask--arrow_back);
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+@media (max-width: 767px) {
+  #referrerLink {
+    font-size: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--pf-global--BorderRadius--sm);
+    border: var(--pf-global--BorderWidth--sm) solid var(--pf-global--primary-color--100);
+  }
+  #referrerLink::before {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #landingSignInButton,
+  #landingSignOutButton,
+  #signOutButton {
+    font-size: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  #landingSignInButton::before,
+  #landingSignOutButton::before,
+  #signOutButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+#landingSignInButton::before {
+  background-image: var(--pf-global--Icon--Bg--login);
+}
+
+#landingSignOutButton::before,
+#signOutButton::before {
+  background-image: var(--pf-global--Icon--Bg--logout);
+}
+
+#landingLoggedInUser,
 #loggedInUser {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   max-width: calc(100vw - 16rem);
-  margin-left: 0 !important;
+  margin-left: var(--pf-global--spacer--md) !important;
 }
 
 #landingWelcomeMessage {
