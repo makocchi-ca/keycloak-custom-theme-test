@@ -119,7 +119,9 @@
   position: relative;
   padding: var(--pf-global--spacer--form-element) var(--pf-global--spacer--md);
 }
+#landingReferrerLink i,
 #landingReferrerLink svg,
+#referrerLink i,
 #referrerLink svg {
   display: none;
 }
@@ -187,6 +189,10 @@
 #landingSignOutButton::before,
 #signOutButton::before {
   background-image: var(--pf-global--Icon--Bg--logout);
+}
+
+#landingMobileKebab {
+  display: none;
 }
 
 #landingLoggedInUser,
