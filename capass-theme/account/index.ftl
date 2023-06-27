@@ -186,7 +186,7 @@
         <div class="pf-c-page__header-tools">
             <#if referrer?has_content && referrer_uri?has_content>
             <div class="pf-c-page__header-tools-group">
-              <a id="landingReferrerLink" href="${referrer_uri}"tabindex="0">
+              <a id="landingReferrerLink" href="${referrer_uri}" tabindex="0">
                   ${msg("backTo",referrerName)}
               </a>
             </div>
