@@ -200,6 +200,16 @@
               <button id="landingSignOutButton" tabindex="0" style="display:none" onclick="keycloak.logout();" class="pf-c-button pf-m-primary" type="button">${msg("doSignOut")}</button>
             </div>
 
+            <!-- Kebab for mobile -->
+            <div class="pf-c-page__header-tools-group pf-u-display-none-on-md">
+                <div id="landingMobileKebab" class="pf-c-dropdown pf-m-mobile" onclick="toggleMobileDropdown();"> <!-- pf-m-expanded -->
+                    <button aria-label="Actions" tabindex="0" id="landingMobileKebabButton" class="pf-c-dropdown__toggle pf-m-plain" type="button" aria-expanded="true" aria-haspopup="true">
+                    </button>
+                    <ul id="landingMobileDropdown" aria-labelledby="landingMobileKebabButton" class="pf-c-dropdown__menu pf-m-align-right" role="menu" style="display:none">
+                    </ul>
+                </div>
+            </div>
+
             <span id="landingLoggedInUser"></span>
 
         </div> <!-- end header tools -->
