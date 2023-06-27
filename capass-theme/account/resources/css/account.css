@@ -200,8 +200,12 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  max-width: calc(100vw - 16rem);
+  max-width: calc(100vw - 19rem);
   margin-left: var(--pf-global--spacer--md) !important;
+}
+
+#landingLoggedInUser {
+  margin-left: var(--pf-global--spacer--sm) !important;
 }
 
 #landingWelcomeMessage {
