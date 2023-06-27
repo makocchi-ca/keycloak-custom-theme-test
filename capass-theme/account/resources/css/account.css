@@ -204,8 +204,10 @@
   margin-left: var(--pf-global--spacer--md) !important;
 }
 
-#landingLoggedInUser {
-  margin-left: var(--pf-global--spacer--sm) !important;
+@media (max-width: 767px) {
+  #landingLoggedInUser {
+    margin-left: var(--pf-global--spacer--sm) !important;
+  }
 }
 
 #landingWelcomeMessage {
@@ -356,6 +358,15 @@
   --pf-global--primary-color--100: var(--pf-global--primary-color--light-100);
   --pf-global--link--Color: var(--pf-global--link--Color--light);
   --pf-global--link--Color--hover: var(--pf-global--link--Color--light--hover);
+  --pf-c-data-list__item-row--xl--PaddingRight: 0;
+  --pf-c-data-list__item-row--xl--PaddingLeft: 0;
+  --pf-c-data-list__item-row--PaddingRight: 0;
+  --pf-c-data-list__item-row--PaddingLeft: 0;
+  --pf-c-data-list__item-control--md--MarginRight: 0;
+  --pf-c-data-list__item-control--MarginRight: 0;
+  --pf-c-data-list__expandable-content-body--xl--PaddingLeft: 0;
+  --pf-c-data-list__toggle--MarginLeft: 0;
+  margin-bottom: -1px !important;
 }
 
 .pf-c-card {

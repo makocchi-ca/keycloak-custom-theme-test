@@ -120,6 +120,10 @@ a :hover {
   --pf-global--link--TextDecoration: var(--pf-global--link--TextDecoration--hover);
 }
 
+.pf-u-pl-35xl {
+  padding-left: 3rem;
+}
+
 .pf-c-button {
   padding: var(--pf-c-button--PaddingTop) var(--pf-c-button--PaddingRight) var(--pf-c-button--PaddingBottom) var(--pf-c-button--PaddingLeft);
   font-size: var(--pf-c-button--FontSize);
