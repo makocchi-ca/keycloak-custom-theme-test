@@ -12,6 +12,10 @@
 
   --pf-c-data-list__cell--MarginRight: var(--pf-global--spacer--md);
 
+  --pf-c-data-list__expandable-content-body--PaddingRight: 0;
+  --pf-c-data-list__expandable-content-body--PaddingLeft: 0;
+  --pf-c-data-list__expandable-content-body--xl--PaddingLeft: 0;
+
   --pf-c-data-list__item-row--xl--PaddingRight: var(--pf-global--spacer--md);
   --pf-c-data-list__item-row--xl--PaddingLeft: var(--pf-global--spacer--md);
 
@@ -22,10 +26,6 @@
 
   --pf-c-data-list__item-control--md--MarginRight: 0;
   --pf-c-data-list__item-control--MarginRight: 0;
-
-  --pf-c-data-list__expandable-content-body--xl--PaddingLeft: 0;
-
-  --pf-c-data-list__toggle--MarginLeft: 0;
 
   margin-bottom: -1px !important;
 
