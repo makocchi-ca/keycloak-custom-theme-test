@@ -2,10 +2,18 @@
   font-size: var(--pf-global--FontSize--xl);
   font-family: inherit;
   font-weight: normal;
-  padding-right: var(--pf-global--spacer--sm);
+  padding-left: var(--pf-global--spacer--sm);
   margin-bottom: 0;
 }
 
 #kc-username {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#reset-login {
+  margin-left: -24px;
 }

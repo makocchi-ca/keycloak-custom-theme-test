@@ -3,8 +3,8 @@
   display: inline-block;
 
   .kc-tooltip-text {
-    top: -3px;
-    left: 160%;
+    top: -8px;
+    right: 160%;
     background-color: var(--pf-global--BackgroundColor--dark-100);
     visibility: hidden;
     color: var(--pf-global--Color--light-300);
@@ -20,12 +20,12 @@
     &::after {
       content: " ";
       position: absolute;
-      top: 15px;
-      right: 100%;
+      top: 18px;
+      left: 100%;
       margin-top: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: transparent var(--pf-global--Color--200) transparent transparent;
+      border-color: transparent transparent transparent var(--pf-global--BackgroundColor--dark-100);
     }
   }
 

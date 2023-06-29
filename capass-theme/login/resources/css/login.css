@@ -264,12 +264,29 @@ a#kc-current-locale-link::after {
   font-size: var(--pf-global--FontSize--xl);
   font-family: inherit;
   font-weight: normal;
-  padding-right: var(--pf-global--spacer--sm);
+  padding-left: var(--pf-global--spacer--sm);
   margin-bottom: 0;
 }
 
 #kc-username {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#reset-login {
+  margin-left: -24px;
 }
 
 form {
@@ -470,8 +487,8 @@ form {
   display: inline-block;
 }
 .kc-login-tooltip .kc-tooltip-text {
-  top: -3px;
-  left: 160%;
+  top: -8px;
+  right: 160%;
   background-color: var(--pf-global--BackgroundColor--dark-100);
   visibility: hidden;
   color: var(--pf-global--Color--light-300);
@@ -489,12 +506,12 @@ form {
 .kc-login-tooltip .kc-tooltip-text::after {
   content: " ";
   position: absolute;
-  top: 15px;
-  right: 100%;
+  top: 18px;
+  left: 100%;
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent var(--pf-global--Color--200) transparent transparent;
+  border-color: transparent transparent transparent var(--pf-global--BackgroundColor--dark-100);
 }
 .kc-login-tooltip:hover .kc-tooltip-text {
   visibility: visible;
