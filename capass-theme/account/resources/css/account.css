@@ -243,7 +243,6 @@
 
 #landingWelcomeMessage {
   padding: var(--pf-global--spacer--lg);
-  color: var(--pf-global--palette--white);
   background: -webkit-gradient(linear, left top, right top, from(var(--pf-global--active-color--100)), to(var(--pf-global--active-color--300)));
   background: linear-gradient(90deg, var(--pf-global--active-color--100), var(--pf-global--active-color--300));
   border-radius: var(--pf-global--BorderRadius--sm);
@@ -253,6 +252,7 @@
 }
 #landingWelcomeMessage * {
   position: relative;
+  color: var(--pf-global--palette--white);
 }
 #landingWelcomeMessage::before {
   content: "";
