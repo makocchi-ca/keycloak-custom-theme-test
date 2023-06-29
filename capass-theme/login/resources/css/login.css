@@ -641,8 +641,12 @@ form {
 }
 
 #kc-totp-settings {
-  margin: 0;
-  padding-left: var(--pf-global--spacer--lg);
+  padding-left: var(--pf-global--spacer--md);
+  font-size: var(--pf-global--FontSize--sm);
+  margin-bottom: var(--pf-global--spacer--xl);
+}
+#kc-totp-settings > li {
+  margin-bottom: var(--pf-global--spacer--md);
 }
 #kc-totp-supported-apps {
   margin-bottom: var(--pf-global--spacer--sm);

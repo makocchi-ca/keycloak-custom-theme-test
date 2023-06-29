@@ -225,6 +225,7 @@ a :hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  vertical-align: -0.125em;
 }
 .pf-icon::before,
 .pficon::before {
