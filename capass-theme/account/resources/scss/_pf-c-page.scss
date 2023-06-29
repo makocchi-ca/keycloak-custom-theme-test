@@ -19,6 +19,15 @@
   --pf-c-page--section--m-shadow-bottom--BoxShadow: none;
   --pf-c-page--section--m-shadow-top--BoxShadow: none;
 
+  @media screen and (min-width: 768px) {
+    --pf-c-page__header-sidebar-toggle__c-button--MarginRight: var(--pf-global--spacer--md);
+
+    --pf-c-page__main-section--PaddingTop: var(--pf-global--spacer--xl);
+    --pf-c-page__main-section--PaddingRight: var(--pf-global--spacer--xl);
+    --pf-c-page__main-section--PaddingBottom: var(--pf-global--spacer--xl);
+    --pf-c-page__main-section--PaddingLeft: var(--pf-global--spacer--xl);
+  }
+
   &__header {
     --pf-global--Color--100: var(--pf-global--Color--dark-100);
     --pf-global--Color--200: var(--pf-global--Color--dark-200);
@@ -60,7 +69,15 @@
   }
 
   &__main {
-    padding: var(--pf-global--spacer--md);
+    padding: var(--pf-global--spacer--lg) var(--pf-global--spacer--md);
+
+    @media screen and (min-width: 768px) {
+      padding: var(--pf-global--spacer--xl);
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: var(--pf-global--spacer--2xl);
+    }
 
     &-nav.pf-m-limit-width,
     &-breadcrumb.pf-m-limit-width,
@@ -93,6 +110,10 @@
       margin-bottom: var(--pf-global--spacer--lg);
       margin-left: auto;
 
+      @media (max-width: 767px) {
+        margin-bottom: var(--pf-global--spacer--md);
+      }
+
       &:first-child {
         padding: 0;
         background-color: transparent;
@@ -115,24 +136,30 @@
       .pf-c-page__main-body {
         padding: 0;
       }
+
+      h2.pf-c-title.pf-m-xl {
+        font-size: var(--pf-global--FontSize--lg);
+        font-weight: var(--pf-global--FontWeight--overpass--bold);
+        @media (max-width: 767px) {
+          font-size: var(--pf-global--FontSize--md);
+        }
+      }
+      h3.pf-c-title.pf-m-md {
+        font-size: var(--pf-global--FontSize--lg);
+        margin-bottom: var(--pf-global--spacer--sm) !important;
+        @media (max-width: 767px) {
+          font-size: var(--pf-global--FontSize--md);
+        }
+      }
+      span[id$="-help"] {
+        color: var(--pf-global--Color--200);
+        @media (max-width: 767px) {
+          font-size: var(--pf-global--FontSize--sm);
+        }
+      }
     }
 
-    @media screen and (min-width: 992px) {
-      padding: var(--pf-global--spacer--xl);
-    }
 
-    @media screen and (min-width: 1200px) {
-      padding: var(--pf-global--spacer--2xl);
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    --pf-c-page__header-sidebar-toggle__c-button--MarginRight: var(--pf-global--spacer--md);
-
-    --pf-c-page__main-section--PaddingTop: var(--pf-global--spacer--lg);
-    --pf-c-page__main-section--PaddingRight: var(--pf-global--spacer--xl);
-    --pf-c-page__main-section--PaddingBottom: var(--pf-global--spacer--lg);
-    --pf-c-page__main-section--PaddingLeft: var(--pf-global--spacer--xl);
   }
 }
 

@@ -1,0 +1,11 @@
+.pf-c-content {
+  --pf-c-content--h1--MarginBottom: var(--pf-global--spacer--sm);
+
+  h1.pf-c-title.pf-m-2xl {
+    margin-bottom: var(--pf-c-content--h1--MarginBottom) !important;
+
+    @media (max-width: 767px) {
+      font-size: var(--pf-global--FontSize--xl);
+    }
+  }
+}

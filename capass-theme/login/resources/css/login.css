@@ -123,6 +123,10 @@ textarea.pf-c-form-control {
   padding-bottom: var(--pf-c-form__group-label--PaddingBottom);
 }
 
+.btn-default {
+  background-image: none;
+}
+
 #kc-locale ul {
   background-color: var(--pf-global--BackgroundColor--100);
   display: none;
