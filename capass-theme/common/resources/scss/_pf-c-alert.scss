@@ -20,3 +20,8 @@
     --pf-c-alert--BorderTopWidth: 0;
   }
 }
+
+.alert-info {
+  color: var(--pf-global--Color--100);
+  background-color: var(--pf-c-alert--BackgroundColor);
+}

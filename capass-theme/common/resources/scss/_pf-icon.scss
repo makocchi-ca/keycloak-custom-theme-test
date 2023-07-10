@@ -33,6 +33,7 @@
 
 
 .fa {
+  vertical-align: -0.125em;
 
   &::before {
     content: '';
@@ -64,5 +65,11 @@
   }
   &-plus-circle::before {
     mask-image: var(--pf-global--Icon--Mask--plus-circle);
+  }
+  &-info-circle::before {
+    mask-image: var(--pf-global--Icon--Mask--info);
+  }
+  &-mobile::before {
+    mask-image: var(--pf-global--Icon--Mask--mobile);
   }
 }
